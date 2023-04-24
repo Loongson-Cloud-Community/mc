@@ -17,8 +17,8 @@
 // along with this program. If not, see <http://www.gnu.org/licenses/>.
 //
 
-//go:build (linux && 386) || (linux && amd64) || (linux && arm64) || (linux && mips64) || (linux && mips)
-// +build linux,386 linux,amd64 linux,arm64 linux,mips64 linux,mips
+//go:build (linux && 386) || (linux && amd64) || (linux && arm64) || (linux && mips64) || (linux && mips) || (linux && mips64le)
+// +build linux,386 linux,amd64 linux,arm64 linux,mips64 linux,mips linux,mips64le
 
 package kernel
 

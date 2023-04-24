@@ -70,11 +70,11 @@ readlink() {
 
 assert_is_supported_arch() {
     case "${ARCH}" in
-        x86_64 | amd64 | ppc64le | aarch64 | arm* | s390x )
+        x86_64 | amd64 | ppc64le | aarch64 | arm* | s390x | mips64 | mips64le)
             return
             ;;
         *)
-            echo "Arch '${ARCH}' is not supported. Supported Arch: [x86_64, amd64, ppc64le, aarch64, arm*, s390x]"
+            echo "Arch '${ARCH}' is not supported. Supported Arch: [x86_64, amd64, ppc64le, aarch64, arm*, s390x, mips64, mips64le]"
             exit 1
     esac
 }
